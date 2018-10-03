@@ -1,56 +1,87 @@
 :root {
-	  --main-bg-color: white; 
+	--main-bg-color: #eae1d7;
 }
+
 body {
 	background-color: var(--main-bg-color);
 }
+
 .sideMenu {
 	float: left;
 	background-color: #5d5c61;
 	width: 375px;
 	height: 1024px;
 	border-radius: 3px;
-	
+
 }
+
+
 .inner {
 	width: 308px;
 	height: 900px;
 	background-color: var(--main-bg-color);
 	border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	position: relative;
 	top: 56px;
 	left: 32px;
 }
 
-input[type = "button"] {
-	    font: 1rem 'Fira Sans', sans-serif;
-    padding: .5rem;
-    background: #86d1f0;
-    border: none;
-    border-radius: 4px;
-    margin: 4px;
+input[type="button"] {
+	font: 1rem 'Fira Sans', sans-serif;
+	padding: .5rem;
+	background: #86d1f0;
+	border: none;
+	border-radius: 4px;
+	margin: 4px;
 }
 
 .fit {
 	width: 288px;
 	height: 205px;
-	background: #56CCF2;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background: #b1a296;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	position: absolute;
 	top: 677px;
 	left: 10px;
-	
+	display: flex;
+	justify-content: center;
+
+
 }
 
+.fit > .round {
 
+	background: #2F80ED;
+	margin: 2px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+	position: relative;
+	top: 10px;
+
+}
+
+.fit > .footer {
+	background: #659DBD;
+	position: absolute;
+	top: 160px;
+	width: 288px;
+	box-shadow: 1px 1px 9px black;
+	height: 40px;
+	padding: 2px;
+
+
+
+
+}
 
 a * {
-		font-family: Rockwell;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 29px;
+	font-family: Rockwell;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 29px;
 }
 
 
@@ -58,33 +89,40 @@ font-size: 29px;
 
 .up-mneu {
 	position: absolute;
-width: 582px;
-height: 43px;
-left: 583px;
-top: 34px;
+	width: 582px;
+	height: 43px;
+	left: 583px;
+	top: 34px;
 	display: flex;
 
 
-/* Blue 1 */
-background: #2F80ED;
-opacity: 0.87;
-border: 4px solid rgba(255, 16, 16, 0.12);
-box-sizing: border-box;
-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
-border-radius: 6px;
+	/* Blue 1 */
+	background: #2F80ED;
+	opacity: 0.87;
+	border: 4px solid rgba(255, 16, 16, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 6px;
 	font-family: monospace;
 	align-items: center;
 	text-align: center;
 }
+
 .up-mneu > a {
+	text-decoration: none;
 	flex: 1 1 auto;
 	padding: 10px;
+	color: #b1a296;
+	font-size: 20px;
+	transition: 1s;
+
 }
+
 .up-mneu > a:hover {
 	background: #56ccf2;
+	text-decoration: overline;
 	transition: .5s;
 	border-radius: 10px;
 	box-shadow: 5px 3px #659DBD;
+	color: aliceblue;
 }
-
-
